@@ -12,3 +12,7 @@
 
 - Deploy 하는 방법
 > npx hardhat run scripts/[FILE_NAME] --network [hardhat.config에 정의한 네트워크명 입력]
+
+- 이더스캔 Verify
+> npm i --save-dev @nomiclabs/hardhat-etherscan
+> env $(cat .env) npx hardhat verify --network mumbai "MyERC721 Contract Address"
